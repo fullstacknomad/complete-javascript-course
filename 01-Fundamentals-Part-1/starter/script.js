@@ -9,3 +9,6 @@ console.log($new);
 console.log(_function);
 console.log(PI);
 console.log(firstName);
+
+let myFirstJob= "Ninja"
+let myCurrentJob= "Teacher";
