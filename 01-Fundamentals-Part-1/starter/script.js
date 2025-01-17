@@ -199,5 +199,143 @@ else{
     */
 
 // -----------type conversion(manual/explicitly) and coercion(automatically/implicitly)--------------
+/*
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear),typeof(Number(inputYear)), inputYear, typeof(inputYear));
+console.log(Number(inputYear)+18);
+
+console.log(typeof('Ninja'))
+console.log(typeof(NaN))
+
+console.log(String(23),23)
+//  type coercion
+
+console.log('I am '+23+' year old')
+// + operator triggers type coercion to convert 23 number to [string]
+console.log('23'-'3'-10);
+// - operator does nothing it just works as if it is a number.
+console.log('20'/'10')
+//  does the same
+console.log('20'*'10')
+// does the same
+
+let n = '1'+1;
+n = n-1;
+console.log(n);
+*/
+
+// --------truthy falsy value--------
+
+// falsy value : 0,'', undefined, null, NaN, false
+/*
+// List of falsy values
+const falsyValues = [0, '', undefined, null, NaN, false];
+
+// Logging each value with its boolean conversion
+falsyValues.forEach(value => {
+  console.log(`Value: ${value}, Boolean: ${Boolean(value)}`);
+});
+
+console.log("----------------------------")
+// truthy value : [1, 'hello', [], {}, true, 42, -42, Infinity, -Infinity, 'false'(false is string here "" is used)]
+// List of truthy values
+const truthyValues = [1, 'hello', [], {}, true, 42, -42, Infinity, -Infinity, 'false'];
+
+// Logging each value with its boolean conversion
+truthyValues.forEach(value => {
+  console.log(`Value: ${value}, Boolean: ${Boolean(value)}`);
+});
+*/
+
+// ------equality operator == and ===
+// == does type coercion loose equality opeartor
+// === does not do type coercion
+/*
+const age= '18';
+if(age==18)
+    console.log("yup 18 loosely")
+if(age===18)
+    console.log("yup 18 not so loosely")
+console.log('18'==18) // true
+console.log('18'===18) // false (this operator checks types too)
 
 
+let favourite = prompt("What is you favourite number?");
+console.log(favourite)
+console.log(typeof(favourite)) // string type
+*/
+
+// -----------logical opearators-------------
+/*
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision)
+console.log(hasDriversLicense || hasGoodVision)
+console.log(!hasDriversLicense)
+
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+if(shouldDrive){
+    console.log('Sarah is able to drive.')
+}
+else{
+    console.log('Someone else should drive...')
+}
+
+const isTried = true;
+console.log(hasDriversLicense && hasGoodVision && isTried)
+*/
+
+// -----------switch ------------
+/*
+const day = "monday"
+
+switch(day){
+    case 'monday':
+        console.log('plan course structure')
+        console.log('go to coding')
+        break;
+    case 'tuesday':
+        console.log('prepare theory videos')
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log("write code examples")
+        break;
+    case 'friday':
+        console.log("record videos")
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log("enjoy the weekend")
+        break;
+    default:
+        console.log("not a valid input")
+}
+*/
+/*
+// ----------statements and expressions-----------
+// expressions : returns  value
+3+4
+1991
+true && false
+//  statements are just actions
+
+if(23>0){
+    const str = '23 is bigger';
+}
+// in template literals we can only use expressions not  statements
+`${num1+num2}` // will work
+`${if(23>0){
+    const str = '23 is bigger';
+}}` // this won't
+*/
+
+// ---------ternary opearators-----------
+/*
+const age = 13;
+console.log(`i like to drink ${age>=18 ? "wine 🍷":" milk 🍼 "}`)
+*/
