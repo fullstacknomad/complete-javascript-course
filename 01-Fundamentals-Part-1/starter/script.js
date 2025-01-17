@@ -150,3 +150,54 @@ let avgAge = (ageMaria+ageSarah)/2;
 console.log(avgAge)
 */
 //---------strings and template literals----------
+
+/*
+const firstName = "John"
+const birthYear = 2000;
+const job= "teacher"
+const currentYear = 2040;
+
+const message = "I'm "+firstName+ ", a "+(currentYear-birthYear)+" year old "+job;
+// type coercion happening (currentYear-birthYear) number type is converted to string
+console.log(message)
+// template literal uses backticks
+const templateLietralText = `i'm ${firstName}, a ${(currentYear-birthYear)} year old ${job}`;
+console.log(templateLietralText)
+
+
+console.log(
+    'string \n\
+    with \n\
+    multi line'
+);
+
+// this will be used in inserting html while working in js
+console.log(
+    `
+    String
+    with
+    multiple lines
+    `
+)
+    */
+
+//-----------taking decision if else--------------
+
+/*
+
+const age = 12;
+
+const isOldEnough = age >= 18; // comapred by bool here it returns true
+console.log(isOldEnough)
+
+if(isOldEnough){
+    console.log("Cheers 🍻")
+}
+else{
+    console.log(`Wait till ${(18- age)} years, till then have some 🥛`)
+}
+    */
+
+// -----------type conversion(manual/explicitly) and coercion(automatically/implicitly)--------------
+
+
